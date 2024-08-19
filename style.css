@@ -19,7 +19,8 @@
 
 body {
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   background: linear-gradient(45deg, var(--blue-1), var(--blue-2));
 }
 
@@ -57,15 +58,28 @@ body {
 .shape1 {
   height: 13.5em;
   width: 13.5em;
-  right: -7.5em;
-  top: .5em;
+  right: 0em;
+  top: -3em;
 }
 
 .shape2 {
   height: 11em;
   width: 11em;
-  bottom: -3.7em;
-  left: -2.5em;
+  bottom: -3em;
+  left: 0em;
+}
+
+@media screen and (min-width:768px){
+    
+.shape1 {
+    right: -7.5em;
+    top: .5em;
+  }
+  
+  .shape2 {
+    bottom: -3.7em;
+    left: -2.5em;
+  }
 }
 
 .search-container {

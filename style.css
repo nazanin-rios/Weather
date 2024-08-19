@@ -87,6 +87,7 @@ body {
 }
 
 .search-container input {
+    width: 70%;
   padding: 0.7em;
   background-color: transparent;
   border-bottom: 2px solid var(--tras-white-1);
